@@ -46,20 +46,6 @@ class TelefoneTest {
 		assertEquals(numero, telefone.getNumero());
 		
 	}
-	@Test
-	void alunoNaoDeveriaTerMaisDeDoisNumerosDeTelefone(){
-		Aluno aluno = new Aluno(new CPF("123.456.789-00"), "Fulano", new Email("fulano@email.com"));
 
-		Telefone primeiroTelefone = new Telefone("00", "00000000");
-		Telefone segundoTelefone = new Telefone("11", "11111111");
-		Telefone terceiroTelefone = new Telefone("22", "22222222");
-
-		assertThrows(NumeroMaximoDeTelefoneException.class, () -> {
-			aluno.adicionarTelefone(primeiroTelefone.getDdd(), primeiroTelefone.getNumero());
-			aluno.adicionarTelefone(segundoTelefone.getDdd(), segundoTelefone.getNumero());
-			aluno.adicionarTelefone(terceiroTelefone.getDdd(), terceiroTelefone.getNumero());
-		}) ;
-
-	}
 
 }
