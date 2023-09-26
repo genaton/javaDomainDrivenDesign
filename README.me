@@ -17,3 +17,48 @@ GITHUB:
  import code from another repository:
  You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
  ------------------------------------------------------------------------
+
+Abordagem DDD:
+Camadas:
+User Interface
+Application
+Domain
+Infrastructure
+
+A abordagem do Clean Architecture foi de isolar completamente a camada de Dominio das demais, usando a inversao de dependencias.
+A camada de Dominio nao acessa as camadas mais externas. Sao as camadas externas que acessam a camada de dominio.
+
+Nesta abordagem de DDD a camada de dominio terah acesso a camada de infraestrutura.
+
+Padroes sugeridos no DDD: Building box (Entidades vs VO).
+
+Persistencia: Armazenar e recuperar informacoes.
+
+Os conceitos já aprendidos no curso de clean architecture são diretamente relacionados com o estudo de Domain Driven Design.
+
+Muito do que aprendemos no curso anterior (Clean Architecture) é o que chamamos de Building blocks ou Blocos de construção.
+Entity
+Value Object
+Repository
+Factory
+Service
+Todos esses padrões são descritos no estudo sobre DDD e com isso já temos um belo ponto de partida.
+
+Vale ressaltar que o termo Domain Driven Design significa literalmente modelar nosso software nos orientando pelo domínio do negócio.
+
+Linguagem ubiquoa: linguagem comum entre o time de desenvolvimento e o time de administradores ou especialisatas do negócio.
+Ex.: a classe Indicacao e MatricularAluno foram criadas com termos ubiquos "indicacao" e "matricular aluno".
+
+Aprendemos que os estudos de Clean Architecture e DDD geralmente se complementam;
+
+O que é uma invariante?
+É uma regra de negócio que deve sempre ser verdadeira para os objetos serem válidos.
+Ex do projeto:
+Se um aluno tiver mais do que 2 telefones em nosso sistema, essa regra foi violada, logo, o Aluno estará em um estado inválido. Invariantes nada mais são do que regras de negócio que precisam ser verificadas para garantir sua consistência.
+
+Entendemos o que é DDD;
+
+Vimos que diversos conceitos de DDD já foram aprendidos no curso de Clean Architecture;
+
+Conhecemos o termo Linguagem Ubíqua que consiste em ter uma linguagem onipresente entre a equipe de desenvolvimento e a equipe de negócios.
+

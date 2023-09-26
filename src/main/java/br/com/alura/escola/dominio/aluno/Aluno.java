@@ -20,7 +20,16 @@ public class Aluno {
 		this.email = email;
 	}
 
+//	public void adicionarTelefone(String ddd, String numero) {
+//		this.telefones.add(new Telefone(ddd, numero));
+//	}
+
+	//Refatora o metodo com nova regra de negocios: Aluno nao pode ter mais do que dois telefones:
+
 	public void adicionarTelefone(String ddd, String numero) {
+		if(telefones.size() == 2) {
+			throw new IllegalArgumentException("Aluno já possui dois números de telefones cadastrados.");
+		}
 		this.telefones.add(new Telefone(ddd, numero));
 	}
 	
