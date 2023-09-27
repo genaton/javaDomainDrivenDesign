@@ -2,7 +2,7 @@ package br.com.alura.escola.dominio.aluno;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//AGGREGATE ROOT Todas caracteristicas que formam a classe aluno deveria ser manipulada apenas na propria classe. Portanto deve-se tomar cuidado com os getters, pois eles permitem o acesso a esses atributos de fora da classe.
 public class Aluno {
 	
 	private CPF cpf;
